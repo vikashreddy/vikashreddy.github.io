@@ -1,0 +1,17 @@
+name: "Vikash Reddy - Personal Website"
+navbar:
+  title: "Vikash Reddy"
+  left:
+    - text: "Education and Work Experience"
+      href: bio.html
+    - text: "Publications"
+      href: publications.html
+    - text: "Contact"
+      href: contact.html
+output_dir: "."
+output:
+  html_document:
+    theme: cosmo
+    highlight: textmate
+#    include:
+#      after_body: _footer.html

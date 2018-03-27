@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Publications</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Vikash Reddy</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="bio.html">Education and Work Experience</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Publications</h1>
+
+</div>
+
+
+<p><font face="garamond"></p>
+<div id="books" class="section level2">
+<h2>Books</h2>
+<ul>
+<li>Dougherty,K.J., Jones, S.M., Lahr, H., Natow, R.S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2016). <a href="https://jhupbooks.press.jhu.edu/content/performance-funding-higher-education"><em>Performance Funding for Higher Education.</em></a> Baltimore: Johns Hopkins University Press <br> <br></li>
+<li>Dougherty, K. J., &amp; <strong>Reddy, V.</strong> (2013). <a href="https://www.wiley.com/en-us/Performance+Funding+for+Higher+Education%3A+What+Are+the+Mechanisms%3F+What+Are+the+Impacts%3F%3A+ASHE+Higher+Education+Report%2C+39%3A2-p-9781118754382">Performance Funding for Higher Education: What Are the Mechanisms? What Are the Impacts?</a> (K. Ward &amp; L. Wolf-Wendel, Series Eds.) <em>ASHE Higher Education Report, 39</em>(2), 1–134. <br> <br></li>
+</ul>
+</div>
+<div id="book-chapters" class="section level2">
+<h2>Book Chapters</h2>
+<ul>
+<li>Barnett, E. A., &amp; <strong>Reddy, V.</strong> (2018). College Placement Strategies: Evolving Considerations and Practices. In K. McClarty, K. D. Mattern, &amp; M. Gaertner (Eds.), <a href="https://www.routledge.com/Preparing-Students-for-College-and-Careers-Theory-Measurement-and-Educational/Larsen-McClarty-Mattern-Gaertner/p/book/9781138656284"><em>Preparing Students for College and Careers: Theory, Measurement, and Educational Practice.</em></a> New York, NY: Routledge. <br> <br></li>
+<li>Dougherty, K. J., Natow, R. S., Jones, S. M., Lahr, H., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2015). Origins of the Second Wave of Performance Funding Adoptions. In K. J. Dougherty &amp; R. S. Natow (Eds.), <a href="https://jhupbooks.press.jhu.edu/content/politics-performance-funding-higher-education"><em>The Politics of Performance Funding for Higher Education: Origins, Discontinuations, and Transformations.</em></a> (pp. 142–172). Baltimore: Johns Hopkins University Press. <br> <br></li>
+</ul>
+</div>
+<div id="articles-for-special-edition-of-journal" class="section level2">
+<h2>Articles for Special Edition of Journal</h2>
+<ul>
+<li>Dougherty, K.J., Jones, S.M., Lahr, H., Natow, R.S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2014). <a href="http://journals.sagepub.com/doi/abs/10.1177/0002716214541042">Performance Funding for Higher Education: Forms, Origins, Impacts, and Futures.</a> <em>Annals of the American Academy of Political and Social Science. 655</em>(1): 163 <br> <br></li>
+</ul>
+</div>
+<div id="articles-for-peer-reviewed-journals" class="section level2">
+<h2>Articles for Peer Reviewed Journals</h2>
+<ul>
+<li>Dougherty, K. J., Jones, S. M., Lahr, H., Natow, R. S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2016). <a href="https://www.rsfjournal.org/doi/full/10.7758/RSF.2016.2.1.07">Looking Inside the Black Box of Performance Funding for Higher Education: Policy instruments, organizational obstacles, and intended and unintended impacts.</a> <em>RSF: The Russell Sage Foundation Journal of the Social Sciences, 2</em>(1), 147–173. <br> <br></li>
+</ul>
+</div>
+<div id="working-papers" class="section level2">
+<h2>Working Papers</h2>
+<ul>
+<li>Natow, R.S., <strong>Reddy, V.</strong>, &amp; Grant, M. (2017). <a href="https://postsecondaryreadiness.org/how-why-higher-education-institutions-use-technology-developmental-education-programming/"><em>How and Why Higher Education Institutions Use Technology in Developmental Education Programming</em> (Working Paper).</a> New York, NY: Center for the Analysis of Postsecondary Readiness. <br> <br></li>
+<li>Barnett, E. A., &amp; <strong>Reddy, V.</strong> (2017). <a href="https://postsecondaryreadiness.org/college-placement-strategies-evolving-considerations-practices/"><em>College placement strategies; Evolving considerations and practices</em> (Working Paper).</a> New York, NY: Center for the Analysis of Postsecondary Readiness. <br> <br></li>
+<li>Dougherty, K. J., Jones, S. M., Lahr, H., Natow, R. S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2015). <a href="https://ccrc.tc.columbia.edu/publications/organizational-learning-deliberative-structures.html"><em>Organizational Learning by Colleges Responding to Performance Funding: Deliberative Structures and Their Challenges</em> (Working Paper No. 79).</a> New York, NY: Community College Research Center. <br> <br></li>
+<li>Dougherty, K. J., Jones, S. M., Lahr, H., Natow, R. S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2014). <a href="https://ccrc.tc.columbia.edu/publications/implementing-performance-funding-three-leading-states.html"><em>Implementing performance funding in three leading states: Instruments, outcomes, obstacles, and unintended impacts</em> (Working Paper No. 74).</a> New York, NY: Community College Research Center. <br> <br></li>
+<li><strong>Reddy, V.</strong>, Lahr, H., Dougherty, K. J., Jones, S. M., Natow, R. S., &amp; Pheatt, L. (2014). <a href="https://ccrc.tc.columbia.edu/publications/policy-instruments-in-service-of-performance-funding.html"><em>Policy instruments in service of performance funding: A study of performance funding in three states</em> (Working Paper No. 75).</a> New York, NY: Community College Research Center. <br> <br></li>
+<li>Natow, R. S., Pheatt, L., Dougherty, K. J., Jones, S. M., Lahr, H., &amp; <strong>Reddy, V.</strong> (2014). <a href="https://ccrc.tc.columbia.edu/publications/institutional-changes-following-performance-funding-policies.html"><em>Institutional Changes to Organizational Policies, Practices, and Programs Following the Adoption of State-Level Performance Funding Policies</em> (Working Paper No. 76).</a> New York, NY: Community College Research Center. <br> <br></li>
+<li>Pheatt, L., Lahr, H., Dougherty, K. J., Jones, S. M., Natow, R. S., &amp; <strong>Reddy, V.</strong> (2014). <a href="https://ccrc.tc.columbia.edu/publications/obstacles-to-performance-funding-implementation.html"><em>Obstacles to the effective implementation of performance funding: A multistate cross-case analysis</em> (Working Paper No. 77).</a> New York, NY: Community College Research Center. <br> <br></li>
+<li>Lahr, H., Pheatt, L., Dougherty, K. J., Jones, S. M., Natow, R. S., &amp; <strong>Reddy, V.</strong> (2014). <a href="https://ccrc.tc.columbia.edu/publications/unintended-impacts-performance-funding.html"><em>Unintended impacts of performance funding on community colleges and universities in three states</em> (Working Paper No. 78).</a> New York, NY: Community College Research Center. <br> <br></li>
+</ul>
+</div>
+<div id="policy-briefs" class="section level2">
+<h2>Policy Briefs</h2>
+<ul>
+<li>Koh, N.J., <strong>Reddy, V.</strong>, &amp; Chatterji, M. (2014). Understanding validity issues surrounding test-based school and teacher accountability policies. <em>Quality Assurance in Education, 22</em>(1) <br> <br></li>
+</ul>
+</div>
+<div id="reports-to-the-lumina-foundation" class="section level2">
+<h2>Reports to the Lumina Foundation</h2>
+<ul>
+<li><p><strong>Reddy, V.</strong>, Lahr, H., Dougherty, K.J., Jones, S.M., Natow, R.S., &amp; Pheatt, L. (2013) <em>Performance Funding Policy Instruments: The Theories of Action in Use for Higher Education Performance Funding in Three States.</em> New York, New York: Community College Research Center.</p></li>
+<li><p>Lahr, H., Pheatt, L., Dougherty, K.J., Jones, S.M., Natow, R.S, &amp; <strong>Reddy, V.</strong> (2013) <em>Unintended Impacts of Performance Funding on Community Colleges in Three States.</em> New York, New York: Community College Research Center.</p></li>
+<li><p>Pheatt, L., Lahr, H., Dougherty, K.J., Jones, S.M., Natow, R.S, &amp; <strong>Reddy, V.</strong> (2013) <em>Obstacles to the Effective Implementation of Performance Funding in Community Colleges in Three States.</em> New York, New York: Community College Research Center. <br> <br></p></li>
+</ul>
+</div>
+<div id="conference-papers-presentations-and-roundtables" class="section level2">
+<h2>Conference Papers, Presentations, and Roundtables</h2>
+<ul>
+<li><p><strong>Reddy, V.</strong> (2018) <em>Performance Funding for Higher Education, Presentation and Panel Discussion</em>, Meeting of the Consultation Council, CA Community College Chancellor’s Office</p></li>
+<li><p>Natow, R. &amp; <strong>Reddy, V.</strong> (2018) <em>Title of Technology Paper</em>, Paper presented at the XXth Annual Meeting of the National Association for Developmental Education, National Harbor, MD.</p></li>
+<li><em>Reddy, V.</em>, (2016) <em>Using High School Achievement Information to Improve Placement Accuracy in Community Colleges.</em> Paper presented at the 41st Annual Conference of the Association for the Study of Higher Education, Columbus, OH. <br> <br></li>
+<li><em>Reddy, V.</em>, (2016) <em>Using Multiple Measures to Improve Placement Accuracy in Community Colleges.</em> Presentation at the 2016 US Department of Education, Office of Career, Technical, and Adult Education Convening of Minority Serving Community Colleges, Washington, D.C. <br> <br></li>
+<li><em>Reddy, V.</em>, (2015) <em>From the Schoolhouse to the Statehouse: The role of Teach for America and its alumni in education policy.</em> Roundtable presentation at the April 2015 Annual Meeting of the American Educational Research Association, Chicago, IL. <br> <br></li>
+<li><em>Reddy, V.</em>, Lahr, H., Dougherty, K.J., Jones, S.M., Natow, R.S., &amp; Pheatt, L., (2014) <em>Performance Funding: What Policy Instruments and Theories of Action Underlie this Popular Higher Education Policy?</em> Roundtable presentation at the 2014 Annual Meeting of the American Educational Research Association, Philadelphia, Pennsylvania. <br> <br></li>
+<li>Lahr, H., Pheatt, L., Dougherty, K.J., Jones, S.M., Natow, R.S, &amp; <strong>Reddy, V.</strong> (2014) <em>Obstacles and Unintended Impacts: A Study of Performance Funding at Community Colleges in Three States.</em> Roundtable presentation at the 2014 Annual Meeting of the American Educational Research Association, Philadelphia, Pennsylvania. <br> <br></li>
+<li>Dougherty, K.J., Jones, S.M., Lahr, H., Natow, R.S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2014) <em>Performance Funding and Organizational Learning in Three States: Forms, Hindrances, and State Support.</em> Paper presented at the 2014 Annual Meeting of the American Educational Research Association, Philadelphia, Pennsylvania (Presented as part of the Symposium entitled: “Performance Funding and Organizational Learning in Higher Education”). <br> <br></li>
+<li>Dougherty, K.J., Jones, S.M., Lahr, H., Natow, R.S., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2013) <em>The Espoused Theory of Action of Higher Education Performance Funding: How Tightly Coupled Is It?</em> Paper presented at the 38th Annual Conference of the Association for the Study of Higher Education, St. Louis, Missouri. <br> <br></li>
+<li>Natow, R. S., Dougherty, K. J., Jones, S., Lahr, H., Pheatt, L., &amp; <strong>Reddy, V.</strong> (2013). <em>The Political Origins of “Performance Funding 2.0”: Theoretical Perspectives and Comparisons to Performance Funding 1.0.</em> Paper presented at the American Education Research Association Annual Meeting, San Francisco, CA. <br> <br></li>
+<li>Dougherty, K. J., <strong>Reddy, V.</strong>, &amp; Natow, R. S. (2012). <em>Two Worlds of State Performance Accountability.</em> Paper presented at the American Education Research Association Annual Meeting, Vancouver, BC. <br> <br></li>
+<li>Kane, P. R., <strong>Reddy, V.</strong>, &amp; Schou, M. (2012). <em>Wanted: Head of School – What You Need To Know Before You Apply.</em> Presentation at the National Association of Independent Schools Annual Conference, Seattle, WA. <br> <br></li>
+<li><p>Dougherty, K. J., &amp; <strong>Reddy, V.</strong> (2011). <em>The Impacts of Performance Funding: Assessing the Research Literature.</em> Paper presented at the ASHE Public Policy Forum, Charlotte, NC. <br> <br></p></li>
+</ul>
+</div>
+<div id="other-publications" class="section level2">
+<h2>Other Publications</h2>
+<ul>
+<li>Natow, R., <strong>Reddy, V.</strong>, &amp; Grant, M. (October 16, 2017) <a href="https://postsecondaryreadiness.org/anticipating-addressing-challenges-related-technology-developmental-education/"><em>Anticipating and Addressing Challenges Related to Technology in Developmental Education</em></a> <br> <br></li>
+<li><strong>Reddy, V.</strong>, &amp; Barnett, E. (2017, March 29). <a href="http://postsecondaryreadiness.org/moving-to-multiple-measures/">Moving to Multiple Measures</a>. <br> <br></li>
+<li><strong>Reddy, V.</strong> (2011). <a href="http://bit.ly/Teachers_Alone">“Teachers Alone Can’t Create Excellent Schools.”</a> The Answer Sheet. Ed. Strauss, Valerie. Washington DC: The Washington Post.</li>
+</ul>
+<hr />
+<p></font></p>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Education and Work Experience</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Vikash Reddy</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="bio.html">Education and Work Experience</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Education and Work Experience</h1>
+
+</div>
+
+
+<p><font face="garamond"></p>
+<div id="education" class="section level2">
+<h2>Education</h2>
+<div id="doctor-of-philosophy-teachers-college-columbia-university-2016" class="section level3">
+<h3>Doctor of Philosophy – <a href="http://www.tc.edu">Teachers College, Columbia University</a>, 2016</h3>
+<p>New York, NY</p>
+<div id="education-policy" class="section level4">
+<h4>Education Policy</h4>
+<ul>
+<li><p><strong>Dissertation: From the Schoolhouse to the Statehouse: Teach For America and its alumni in education policy</strong></p></li>
+<li><p><strong>Dissertation Committee: Douglas Ready (sponsor), Susan Fuhrman (second reader),</strong><br />
+<strong>Jeffrey Henig, Ester Fuchs, Thomas Hatch</strong></p></li>
+</ul>
+<p>-President, Student Senate (2011-2013; Treasurer 2010-2011)<br />
+-Coordinator, Policy Student Network (2009-2013)<br />
+-Member of Re-Accreditation Self-Study Steering Committee for MSCHE accreditation<br />
+-Member of President’s Committee for Community and Diversity (2011-2013)<br />
+-Dept. of Ed. Policy &amp; Social Analysis Dissertation Fellow -1st Year Fellow, Office of Policy and Research</p>
+<hr />
+</div>
+</div>
+<div id="master-of-science-pace-university-2007" class="section level3">
+<h3>Master of Science – <a href="http://www.pace.edu">Pace University</a>, 2007</h3>
+<p>New York, NY</p>
+<div id="elementary-teaching" class="section level4">
+<h4>Elementary Teaching</h4>
+<hr />
+</div>
+</div>
+<div id="bachelor-of-arts-dartmouth-college-2005" class="section level3">
+<h3>Bachelor of Arts – <a href="http://www.dartmouth.edu">Dartmouth College</a>, 2005</h3>
+<p>Hanover, NH</p>
+<div id="government" class="section level4">
+<h4>Government</h4>
+<ul>
+<li>National Merit Scholar</li>
+<li>Robert C. Byrd Scholar</li>
+<li>Witte 1898 Scholar</li>
+</ul>
+<hr />
+<hr />
+</div>
+</div>
+</div>
+<div id="work-experience" class="section level2">
+<h2>Work Experience</h2>
+<div id="california-policy-lab-uc-berkeley-berkeley-ca" class="section level3">
+<h3><a href="http://www.capolicylab.org">California Policy Lab</a> @ <a href="http://www.berkeley.edu">UC Berkeley</a> – Berkeley, CA</h3>
+<div id="policy-analyst-2017-present" class="section level4">
+<h4><a href="https://www.capolicylab.org/staff/vikash-reddy/">Policy Analyst</a> (2017-present)</h4>
+<p>The California Policy Lab pairs trusted experts from UCLA and UC Berkeley with policymakers to solve our most urgent social problems, including homelessness, poverty, crime, and education inequality.</p>
+<hr />
+</div>
+</div>
+<div id="columbia-university-new-york-ny" class="section level3">
+<h3><a href="http://www.columbia.edu">Columbia University</a> – New York, NY</h3>
+<div id="research-affiliate-community-college-research-center-teachers-college-2017-present" class="section level4">
+<h4><a href="https://ccrc.tc.columbia.edu/person/vikash-reddy.html">Research Affiliate</a>, <a href="http://ccrc.tc.columbia.edu">Community College Research Center</a>, <a href="http://www.tc.columbia.edu">Teachers College</a> (2017-present)</h4>
+<p>(Postdoctoral Research Associate ’16-‘17; Research Associate ’15-‘16; Senior Research Assistant ‘12-‘15; Research Assistant ’09-’12; )</p>
+<ul>
+<li>Current research includes statistical analysis and implementation for seven-site randomized control trial testing use of data-analytics for student placement in college coursework, and national survey of developmental education reforms in American colleges.<br />
+</li>
+<li>Prior work includes research on performance funding in higher education</li>
+</ul>
+</div>
+<div id="teaching-fellow-for-mayor-david-n.-dinkins-school-of-international-and-public-affairs-2011-2015" class="section level4">
+<h4>Teaching Fellow for Mayor David N. Dinkins, <a href="http://sipa.columbia.edu">School of International and Public Affairs</a> (2011 –2015)</h4>
+<ul>
+<li>Responsible for syllabus revision, guest-lecture schedule, revision of lecture notes, and evaluation of student work for Critical Issues in Urban Public Policy and Practical Problems in Urban Politics</li>
+</ul>
+</div>
+<div id="instructor-klingenstein-center-teachers-college-2015" class="section level4">
+<h4>Instructor – Klingenstein Center, Teachers College (2015)</h4>
+<ul>
+<li>Taught Introduction to Analytic Research to participants in the center’s program for heads of independent schools.</li>
+</ul>
+</div>
+<div id="policy-student-network-coordinator-teachers-college-sept.-2009-july-2013" class="section level4">
+<h4>Policy Student Network Coordinator, Teachers College (Sept. 2009 – July 2013)</h4>
+<ul>
+<li>Worked with student coordinator and department faculty to plan and hold policy-related events for students across Teachers College with education policy interests.</li>
+</ul>
+</div>
+<div id="teaching-assistant-to-prof.pearl-kane-klingenstein-center-teachers-college-summer-2011" class="section level4">
+<h4>Teaching Assistant to Prof. Pearl Kane – Klingenstein Center, Teachers College (Summer 2011)</h4>
+<ul>
+<li>Assisted professor with syllabus revisions, class planning, content delivery, and evaluation of student work for Privatization and School Choice.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="public-school-213-new-york-city-department-of-education-new-york-ny" class="section level3">
+<h3>Public School 213, New York City Department of Education – New York, NY</h3>
+<div id="rd-grade-teacher-2005-2008" class="section level4">
+<h4>3rd Grade Teacher (2005 – 2008)</h4>
+<p>Self-contained classroom in East New York</p>
+<ul>
+<li>Member of School Consultation Committee, Inquiry Team, and Leadership Committee.<br />
+</li>
+<li>Grade Leader (2007-2008)<br />
+</li>
+<li>Teach for America Corps Member (2005 – 2007)</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="united-states-federal-district-court-salt-lake-city-ut" class="section level3">
+<h3>United States Federal District Court – Salt Lake City, UT</h3>
+<div id="intern-office-of-chief-judge-dee-benson-summer-2004" class="section level4">
+<h4>Intern, Office of Chief Judge Dee Benson (Summer, 2004)</h4>
+<ul>
+<li>Primary responsibilities included summarizing incoming briefs, drafting orders, and observing courtroom proceedings.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="matheson-for-governor-2004-salt-lake-city-ut" class="section level3">
+<h3>Matheson For Governor 2004 – Salt Lake City, UT</h3>
+<div id="county-field-coordinator-general-intern-summer-2004" class="section level4">
+<h4>County Field Coordinator; General Intern (Summer, 2004)</h4>
+<ul>
+<li>Worked on three-person team managing field office, field work, and volunteers in the fourth most populous county in Utah. Assisted in main office with research, fundraising, and public relations.</li>
+</ul>
+<hr />
+</div>
+</div>
+<div id="dartmouth-college-hanover-nh" class="section level3">
+<h3>Dartmouth College – Hanover, NH</h3>
+<div id="research-assistant-to-professor-linda-fowler-spring-2004" class="section level4">
+<h4>Research Assistant to Professor Linda Fowler (Spring, 2004)</h4>
+<ul>
+<li>Performed statistical analyses of special rule assignments in the U.S. House of Representatives.</li>
+</ul>
+<hr />
+<p></font></p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
