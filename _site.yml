@@ -1,6 +1,6 @@
 name: "Vikash Reddy - Personal Website"
 navbar:
-  title: "Vikash Reddy"
+  title: "Home"
   left:
     - text: "Education and Work Experience"
       href: bio.html
